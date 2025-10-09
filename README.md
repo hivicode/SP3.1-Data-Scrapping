@@ -17,12 +17,19 @@ Mempelajari penggunaan BeautifulSoup untuk parsing HTML:
 - Selektor dan filter elemen
 - Manipulasi konten HTML
 
+### [Pertemuan 4 - Web Scraping dengan Requests](./pertemuan_4/)
+Mempelajari penggunaan library Requests untuk HTTP request dan web scraping:
+- HTTP GET request
+- Response properties (status code, headers, encoding)
+- Menyimpan HTML ke file
+- Kombinasi Requests + BeautifulSoup
+
 ## 🚀 Quick Start
 
 1. Clone repository ini
 2. Install dependencies:
    ```bash
-   pip install beautifulsoup4
+   pip install beautifulsoup4 requests
    ```
 3. Masuk ke folder pertemuan yang diinginkan
 4. Jalankan file Python yang ada
@@ -36,8 +43,13 @@ SP3.1 Data Scrapping/
 ├── pertemuan_2/
 │   ├── pertemuan_2.py
 │   └── README.md
-└── pertemuan_3/
-    ├── pertemuan_3.py
+├── pertemuan_3/
+│   ├── pertemuan_3.py
+│   └── README.md
+└── pertemuan_4/
+    ├── pertemuan_4.py
+    ├── tes_1.py
+    ├── fungsi.py
     └── README.md
 ```
 
@@ -45,6 +57,7 @@ SP3.1 Data Scrapping/
 
 - Python 3.6+
 - beautifulsoup4
+- requests
 - os (built-in)
 
 ## 📖 Cara Menggunakan
