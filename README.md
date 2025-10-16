@@ -24,6 +24,13 @@ Mempelajari penggunaan library Requests untuk HTTP request dan web scraping:
 - Menyimpan HTML ke file
 - Kombinasi Requests + BeautifulSoup
 
+### [Pertemuan 5 - Advanced Web Scraping dengan Multiclass Selectors](./pertemuan_5/)
+Mempelajari teknik lanjutan dalam web scraping:
+- Multiclass selectors untuk mencari elemen dengan multiple class
+- Advanced HTML parsing dengan nested selectors
+- Kombinasi Requests + BeautifulSoup untuk scraping real website
+- Menyimpan hasil scraping ke file
+
 ## 🚀 Quick Start
 
 1. Clone repository ini
@@ -46,9 +53,15 @@ SP3.1 Data Scrapping/
 ├── pertemuan_3/
 │   ├── pertemuan_3.py
 │   └── README.md
-└── pertemuan_4/
-    ├── pertemuan_4.py
-    ├── tes_1.py
+├── pertemuan_4/
+│   ├── pertemuan_4.py
+│   ├── tes_1.py
+│   ├── fungsi.py
+│   └── README.md
+└── pertemuan_5/
+    ├── 1_multiclass.py
+    ├── 2_contoh_multiclass.py
+    ├── 3_ambil_judul.py
     ├── fungsi.py
     └── README.md
 ```
