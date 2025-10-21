@@ -31,6 +31,17 @@ Mempelajari teknik lanjutan dalam web scraping:
 - Kombinasi Requests + BeautifulSoup untuk scraping real website
 - Menyimpan hasil scraping ke file
 
+### [Pertemuan 6 - AJAX dan Web Development](./pertemuan_6/)
+Mempelajari pengembangan web dengan AJAX dan JavaScript:
+- AJAX dengan vanilla JavaScript dan jQuery
+- Cascading dropdown dengan data JSON
+- Form validation dan user interaction
+- **Kalkulator Biaya Kirim Paket** - Aplikasi studi kasus dengan:
+  - Form input untuk nomor resi, berat barang, kota asal, dan tujuan
+  - Dropdown bertingkat untuk pemilihan kota
+  - Perhitungan otomatis biaya berdasarkan berat dan jarak
+  - Tabel referensi harga berat dan jarak
+
 ## 🚀 Quick Start
 
 1. Clone repository ini
@@ -58,12 +69,23 @@ SP3.1 Data Scrapping/
 │   ├── tes_1.py
 │   ├── fungsi.py
 │   └── README.md
-└── pertemuan_5/
-    ├── 1_multiclass.py
-    ├── 2_contoh_multiclass.py
-    ├── 3_ambil_judul.py
-    ├── fungsi.py
-    └── README.md
+├── pertemuan_5/
+│   ├── 1_multiclass.py
+│   ├── 2_contoh_multiclass.py
+│   ├── 3_ambil_judul.py
+│   ├── fungsi.py
+│   └── README.md
+└── pertemuan_6/
+    ├── index.html (AJAX dengan vanilla JavaScript)
+    ├── index1.html (AJAX dengan jQuery)
+    ├── script.js (JavaScript untuk AJAX)
+    ├── data.json (Data mahasiswa)
+    ├── select.html (Cascading dropdown)
+    ├── data-lokasi.js (JavaScript untuk dropdown)
+    └── tugas/
+        ├── shipping-calculator.html (Kalkulator biaya kirim)
+        ├── shipping-calculator.js (Logika perhitungan)
+        └── kota.xml (Data kota)
 ```
 
 ## 🔧 Requirements
@@ -72,6 +94,11 @@ SP3.1 Data Scrapping/
 - beautifulsoup4
 - requests
 - os (built-in)
+
+### Untuk Pertemuan 6 (Web Development):
+- Web browser modern
+- Local web server (optional, untuk AJAX)
+- jQuery 3.6.0+ (untuk contoh AJAX dengan jQuery)
 
 ## 📖 Cara Menggunakan
 
