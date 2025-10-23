@@ -2,7 +2,7 @@
 
 Pertemuan ini membahas operasi-operasi dasar file dan directory dalam Python.
 
-## 📁 Metode yang Dipelajari
+## Metode yang Dipelajari
 
 ### 1. Ucapan (Print Function)
 **Fungsi**: Menampilkan teks ke console
@@ -122,13 +122,13 @@ def remove_file(path):
 file tidak ada
 ```
 
-## 📝 Cara Menjalankan
+## Cara Menjalankan
 
 1. Pastikan Python sudah terinstall
 2. Jalankan file `pertemuan_2.py`
 3. Perhatikan output di console dan perubahan file/directory
 
-## 📂 Struktur File yang Dibuat
+## Struktur File yang Dibuat
 
 ```
 scrapping/

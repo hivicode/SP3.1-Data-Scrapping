@@ -2,7 +2,7 @@
 
 Pertemuan ini membahas penggunaan BeautifulSoup untuk parsing dan manipulasi HTML content.
 
-## 🏷️ Metode yang Dipelajari
+## Metode yang Dipelajari
 
 ### 1. Basic HTML Parsing
 **Fungsi**: Parse HTML sederhana dan tampilkan struktur lengkap
@@ -185,21 +185,21 @@ div8
 div10
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 Pastikan untuk menginstall BeautifulSoup4:
 ```bash
 pip install beautifulsoup4
 ```
 
-## 📝 Cara Menjalankan
+## Cara Menjalankan
 
 1. Install BeautifulSoup4: `pip install beautifulsoup4`
 2. Uncomment bagian kode yang ingin dijalankan di `pertemuan_3.py`
 3. Jalankan file dengan: `python pertemuan_3.py`
 4. Perhatikan output HTML parsing di console
 
-## 🔍 Tips
+## Tips
 
 - Gunakan `soup.prettify()` untuk format HTML yang lebih rapi
 - `findAll()` mengembalikan list, gunakan index `[0]` untuk elemen pertama

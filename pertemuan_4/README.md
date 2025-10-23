@@ -2,7 +2,7 @@
 
 Pertemuan ini membahas penggunaan library Requests untuk melakukan HTTP request dan scraping website.
 
-## 🌐 Metode yang Dipelajari
+## Metode yang Dipelajari
 
 ### 1. Import Library Requests
 **Fungsi**: Mengimport library untuk melakukan HTTP request
@@ -114,7 +114,7 @@ print(result.text)
 </html>
 ```
 
-## 📁 File Pendukung
+## File Pendukung
 
 ### fungsi.py
 **Fungsi**: Module helper untuk membuat directory
@@ -171,14 +171,14 @@ main_scrapper("https://www.detik.com/", "hasil")
 </div>]
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 Install library yang diperlukan:
 ```bash
 pip install requests beautifulsoup4
 ```
 
-## 📝 Cara Menjalankan
+## Cara Menjalankan
 
 ### Menjalankan pertemuan_4.py
 ```bash
@@ -192,7 +192,7 @@ python tes_1.py
 ```
 Output akan melakukan scraping dan parsing HTML dari website.
 
-## 🎯 Konsep Penting
+## Konsep Penting
 
 ### HTTP Request Flow
 1. **Request**: Kirim GET request ke URL
@@ -206,14 +206,14 @@ Output akan melakukan scraping dan parsing HTML dari website.
 - Respect website's `robots.txt`
 - Jangan overload server dengan terlalu banyak request
 
-## 🔍 Tips
+## Tips
 
 - Gunakan `result.text` untuk mendapatkan HTML content
 - Kombinasikan dengan BeautifulSoup untuk parsing HTML
 - Simpan hasil scraping ke file untuk analisis lebih lanjut
 - Gunakan `result.status_code` untuk validasi request berhasil
 
-## 📂 Struktur File yang Dibuat
+## Struktur File yang Dibuat
 
 ```
 hasil/

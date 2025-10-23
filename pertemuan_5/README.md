@@ -6,7 +6,7 @@ Pertemuan ini mempelajari teknik lanjutan dalam web scraping menggunakan Beautif
 - Kombinasi Requests + BeautifulSoup untuk scraping real website
 - Menyimpan hasil scraping ke file
 
-## 📁 File Structure
+## File Structure
 
 ```
 pertemuan_5/
@@ -17,14 +17,14 @@ pertemuan_5/
 └── fungsi.py (utility functions untuk file operations)
 ```
 
-## 🔧 Requirements
+## Requirements
 
 - Python 3.6+
 - beautifulsoup4
 - requests
 - os (built-in)
 
-## 📖 Penjelasan File
+## Penjelasan File
 
 ### 1_multiclass.py
 **Tujuan**: Demonstrasi dasar penggunaan multiclass selector
@@ -92,7 +92,7 @@ Title: Judul Artikel 2
 - `create_directory(directory)`: Membuat directory jika belum ada
 - `write_to_file(path, data)`: Menulis data ke file dengan append mode
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 1. **Install dependencies**:
    ```bash
@@ -115,7 +115,7 @@ Title: Judul Artikel 2
    - Console output untuk semua file
    - File `hasil/articles.txt` untuk file `3_ambil_judul.py`
 
-## 📚 Konsep Penting
+## Konsep Penting
 
 ### Multiclass Selectors
 ```python
@@ -148,7 +148,7 @@ with open(path, 'a') as file:
     file.write(data + '\n')
 ```
 
-## ⚠️ Catatan Penting
+## Catatan Penting
 
 1. **Rate Limiting**: Website mungkin memiliki rate limiting, gunakan `time.sleep()` jika diperlukan
 2. **User Agent**: Beberapa website memblokir request tanpa user agent

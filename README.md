@@ -2,7 +2,7 @@
 
 Repository ini berisi materi pembelajaran Data Scraping dengan Python.
 
-## 📚 Struktur Materi
+## Struktur Materi
 
 ### [Pertemuan 2 - File Operations](./pertemuan_2/)
 Mempelajari operasi-operasi dasar file dan directory dalam Python:
@@ -42,7 +42,7 @@ Mempelajari pengembangan web dengan AJAX dan JavaScript:
   - Perhitungan otomatis biaya berdasarkan berat dan jarak
   - Tabel referensi harga berat dan jarak
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Clone repository ini
 2. Install dependencies:
@@ -53,7 +53,7 @@ Mempelajari pengembangan web dengan AJAX dan JavaScript:
 4. Jalankan file Python yang ada
 5. Baca README.md di setiap folder untuk penjelasan detail
 
-## 📁 Struktur Folder
+## Struktur Folder
 
 ```
 SP3.1 Data Scrapping/
@@ -88,7 +88,7 @@ SP3.1 Data Scrapping/
         └── kota.xml (Data kota)
 ```
 
-## 🔧 Requirements
+## Requirements
 
 - Python 3.6+
 - beautifulsoup4
@@ -100,7 +100,7 @@ SP3.1 Data Scrapping/
 - Local web server (optional, untuk AJAX)
 - jQuery 3.6.0+ (untuk contoh AJAX dengan jQuery)
 
-## 📖 Cara Menggunakan
+## Cara Menggunakan
 
 Setiap folder pertemuan memiliki:
 - File Python dengan contoh kode
