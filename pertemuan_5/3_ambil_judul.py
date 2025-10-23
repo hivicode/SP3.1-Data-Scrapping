@@ -25,6 +25,6 @@ system("clear")
 
 fungsi.remove_file("hasil/articlestitles.txt")
 main_scrapper("https://tekno.kompas.com/gadget", "hasil", "articlestitles.txt")
-fungsi.read_data("hasil/articlestitles.txt", 4)
+fungsi.read_data("hasil/articlestitles.txt", 3*2)
 
 

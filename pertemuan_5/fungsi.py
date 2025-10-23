@@ -12,10 +12,14 @@ def read_data(path, limit):
     with open(path,'rt') as file:
         count = 0
         for line in file:
-            if count == limit*2:
+            if count == limit:
                 break
-            print(line.replace("\n",""))
-            count += 1
+            if line == "\n":
+                continue
+            else:
+                count += 1
+                print(line.replace("\n",""))
+                
 
 def does_file_exist(path):
     return os.path.isfile(path)
