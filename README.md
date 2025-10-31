@@ -31,6 +31,12 @@ Mempelajari teknik lanjutan dalam web scraping:
 - Kombinasi Requests + BeautifulSoup untuk scraping real website
 - Menyimpan hasil scraping ke file
 
+### [Pertemuan 6 - Scraping Listing Kompas Tekno](./pertemuan_6/)
+Mengambil daftar artikel (URL dan Judul) dari halaman Kompas Tekno kategori Gadget dan menyimpannya ke `hasil/articlestitles.txt`.
+
+### [Pertemuan 7 - Mengambil Detail Artikel](./pertemuan_7/)
+Membaca daftar URL dari Pertemuan 6, mengunjungi setiap halaman artikel, lalu menyimpan isi artikel ke `hasil/detail.doc`.
+
 ## Quick Start
 
 1. Clone repository ini
@@ -47,6 +53,9 @@ Mempelajari teknik lanjutan dalam web scraping:
 ```
 SP3.1 Data Scrapping/
 ├── README.md (file ini)
+├── hasil/
+│   ├── articlestitles.txt (output Pertemuan 6)
+│   └── detail.doc (output Pertemuan 7)
 ├── pertemuan_2/
 │   ├── pertemuan_2.py
 │   └── README.md
@@ -58,10 +67,18 @@ SP3.1 Data Scrapping/
 │   ├── tes_1.py
 │   ├── fungsi.py
 │   └── README.md
-└── pertemuan_5/
-    ├── 1_multiclass.py
-    ├── 2_contoh_multiclass.py
-    ├── 3_ambil_judul.py
+├── pertemuan_5/
+│   ├── 1_multiclass.py
+│   ├── 2_contoh_multiclass.py
+│   ├── 3_ambil_judul.py
+│   ├── fungsi.py
+│   └── README.md
+├── pertemuan_6/
+│   ├── read_partial.py
+│   └── README.md
+└── pertemuan_7/
+    ├── get_details.py
+    ├── get_details2.py
     ├── fungsi.py
     └── README.md
 ```
