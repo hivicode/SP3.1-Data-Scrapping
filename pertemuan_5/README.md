@@ -155,7 +155,7 @@ with open(path, 'a') as file:
 3. **Legal Considerations**: Pastikan scraping sesuai dengan terms of service website
 4. **Error Handling**: Tambahkan try-catch untuk handling error network
 
-## 🔗 Referensi
+## Referensi
 
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [Requests Documentation](https://requests.readthedocs.io/)

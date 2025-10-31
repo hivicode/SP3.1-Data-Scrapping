@@ -15,8 +15,8 @@ def main_scrapper(url, directory, file):
     articles4 = articles3.find_all("div", {"class":["article__box"]})
 
     for article4 in articles4:
-        # print("URL: ", article4.h3.a.get("href"))
-        # print("Title: ", article4.h3.text, "\n")
+        print("URL: ", article4.h3.a.get("href"))
+        print("Title: ", article4.h3.text, "\n")
         file_path = os.path.join(directory, file)
         fungsi.write_to_file(file_path, "URL: " + article4.h3.a.get("href"))
         fungsi.write_to_file(file_path, "Title: " + article4.h3.text + "\n")
@@ -25,6 +25,6 @@ system("clear")
 
 fungsi.remove_file("hasil/articlestitles.txt")
 main_scrapper("https://tekno.kompas.com/gadget", "hasil", "articlestitles.txt")
-fungsi.read_data("hasil/articlestitles.txt", 3*2)
+
 
 

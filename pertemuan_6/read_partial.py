@@ -13,6 +13,7 @@ def main_scrapper(url, directory, file):
     articles2 = articles.find("div", {"class":["col-bs10-7"]})
     articles3 = articles2.find("div", {"class":["row article__wrap__grid--flex col-offset-fluid mt2"]})
     articles4 = articles3.find_all("div", {"class":["article__box"]})
+    
 
     for article4 in articles4:
         # print("URL: ", article4.h3.a.get("href"))
