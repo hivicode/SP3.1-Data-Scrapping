@@ -38,7 +38,7 @@ def main_scraper(url, directory, filename, detailname):
 if platform.system() == "Windows":
     os.system("cls")
 else:
-    os.system("clear")
+    os.system("clear") # Linux/Mac
 
 # remove old file if exist
 fungsi.remove_file("hasil/articlestitles.txt")
