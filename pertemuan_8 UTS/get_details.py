@@ -11,10 +11,10 @@ def get_details(url):
     divEntry = soup.find("div", {'class': 'read__content'})
     paragraf = divEntry.find_all("p")
     
-    fungsi.write_to_file("hasil/detail.doc", "Paragraf:\n")
+    fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", "Paragraf:\n")
     for p in paragraf:
-        fungsi.write_to_file("hasil/detail.doc", p.text)
-    fungsi.write_to_file("hasil/detail.doc", "-"*100)
+        fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", p.text)
+    fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", "-"*100)
 
 def main_scraper(url, directory, filename, detailname):
     fungsi.create_directory(directory)
@@ -41,8 +41,8 @@ else:
     os.system("clear") # Linux/Mac
 
 # remove old file if exist
-fungsi.remove_file("hasil/articlestitles.txt")
-fungsi.remove_file("hasil/detail.doc")
+fungsi.remove_file("pertemuan_8 UTS/hasil/articlestitles.txt")
+fungsi.remove_file("pertemuan_8 UTS/hasil/detail.doc")
 
 # call main function
-main_scraper("https://tekno.kompas.com/gadget", "hasil", "articlestitles.txt", "detail.doc")
+main_scraper("https://tekno.kompas.com/gadget", "pertemuan_8 UTS/hasil", "articlestitles.txt", "detail.doc")

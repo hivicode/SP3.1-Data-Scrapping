@@ -33,12 +33,12 @@ def get_details(url):
     paragraf = divEntry.find_all("p")
     
     # Tulis judul bagian untuk setiap artikel yang disimpan
-    fungsi.write_to_file("hasil/detail.doc", "Paragraf:\n")
+    fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", "Paragraf:\n")
     for p in paragraf:
         # Simpan teks tiap paragraf ke file detail
-        fungsi.write_to_file("hasil/detail.doc", p.text)
+        fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", p.text)
     # Garis pemisah antar artikel
-    fungsi.write_to_file("hasil/detail.doc", "-"*100)
+    fungsi.write_to_file("pertemuan_8 UTS/hasil/detail.doc", "-"*100)
 
 def main_scraper(url, directory, filename, detailname):
     """Mengambil daftar artikel dari halaman listing dan isi masing-masing artikel.
@@ -80,9 +80,9 @@ else:
 
 # remove old file if exist
 # Pastikan file keluaran lama dihapus agar hasil yang baru bersih
-fungsi.remove_file("hasil/articlestitles.txt")
-fungsi.remove_file("hasil/detail.doc")
+fungsi.remove_file("pertemuan_8 UTS/hasil/articlestitles.txt")
+fungsi.remove_file("pertemuan_8 UTS/hasil/detail.doc")
 
 # call main function
 # Mulai proses scraping dari halaman listing kategori Gadget
-main_scraper("https://tekno.kompas.com/gadget", "hasil", "articlestitles.txt", "detail.doc")
+main_scraper("https://tekno.kompas.com/gadget", "pertemuan_8 UTS/hasil", "articlestitles.txt", "detail.doc")
