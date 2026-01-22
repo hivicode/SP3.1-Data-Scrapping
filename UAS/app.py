@@ -16,27 +16,31 @@ def fetch_detik_populer():
 
     items = populer_area.find_all(attrs={"class": "list-content__item"})
     results = []
-    for item in items:
+    for idx, item in enumerate(items, start=1):
         media_image = item.find("div", {"class": "media__image"})
-        img_tag = media_image.find("img")
-        img_src = img_tag.get("src")
+        img_tag = media_image.find("img") if media_image else None
+        img_src = img_tag.get("src") if img_tag else None
 
         media_text = item.find("div", {"class": "media__text"})
-        title_block = media_text.find("h3", {"class": "media__title"})
-        title_link = title_block.find("a")
-        title = title_link.get_text(strip=True)
+        title_block = media_text.find("h3", {"class": "media__title"}) if media_text else None
+        title_link = title_block.find("a") if title_block else None
+        title = title_link.get_text(strip=True) if title_link else None
 
         date_block = item.find("div", {"class": "media__date"})
-        date_span = date_block.find("span")
-        date_title = date_span.get("title")
-        countdown = date_span.get_text(strip=True)
+        date_span = date_block.find("span") if date_block else None
+        date_title = date_span.get("title") if date_span else None
+        countdown = date_span.get_text(strip=True) if date_span else None
+
+        is_red = ((idx % 2 == 1) and idx not in {1, 9, 15}) or idx == 2 #ini buat nentuin warna index berapa aja yang harusnya merah pak
 
         results.append(
             {
+                "number": idx,
                 "title": title,
                 "img": img_src,
                 "countdown": countdown,
                 "date": date_title,
+                "is_red": is_red,
             }
         )
 

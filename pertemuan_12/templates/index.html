@@ -51,13 +51,13 @@
         <div class="row g-4">
           {% for item in items %}
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
+              <div class="card h-100 shadow-sm {{ 'bg-danger text-white border-danger' if loop.index is odd else '' }}">
                 {% if item.img %}
                   <img src="{{ item.img }}" class="card-img-top" alt="{{ item.title or 'Detik' }}">
                 {% endif %}
                 <div class="card-body">
                   <h2 class="h6 card-title">{{ item.title or 'Judul belum tersedia' }}</h2>
-                  <p class="card-text text-secondary mb-0">
+                  <p class="card-text text-secondary mb-0 {{ 'text-white-50' if loop.index is odd else '' }}">
                     {{ item.date or 'Tanggal belum tersedia' }}
                   </p>
                 </div>

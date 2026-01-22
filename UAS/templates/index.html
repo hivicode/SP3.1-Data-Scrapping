@@ -46,22 +46,19 @@
       </div>
 
       {% if items %}
-        <div class="row g-4">
+        <div class="list-group shadow-sm">
           {% for item in items %}
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card h-100 shadow-sm">
-                {% if item.img %}
-                  <img src="{{ item.img }}" class="card-img-top" alt="{{ item.title or 'Detik' }}">
-                {% endif %}
-                <div class="card-body">
-                  <h2 class="h6 card-title">{{ item.title or 'Judul belum tersedia' }}</h2>
-                  <p class="card-text text-secondary mb-1">
-                    {{ item.countdown or 'Countdown tidak tersedia' }}
-                  </p>
-                  <p class="card-text text-secondary mb-0">
-                    {{ item.date or 'Tanggal belum tersedia' }}
-                  </p>
-                </div>
+            <div class="list-group-item border-1-light p-3 d-flex align-items-center gap-3 {{ 'bg-danger text-white' if item.is_red else 'bg-success text-white' }}">
+              <div class="fw-medium" style="min-width: 28px;">{{ item.number }}.</div>
+              {% if item.img %}
+                <img src="{{ item.img }}" alt="{{ item.title or 'Detik' }}" class="rounded" style="width: 96px; height: 96px; object-fit: cover;">
+              {% else %}
+                <div class="d-flex align-items-center justify-content-center rounded bg-white text-muted" style="width: 96px; height: 96px;">N/A</div>
+              {% endif %}
+              <div class="flex-grow-1">
+                <h2 class="h6 mb-1">{{ item.title or 'Judul belum tersedia' }}</h2>
+                <div class="small text-white mb-1">{{ item.countdown or 'Countdown tidak tersedia' }}</div>
+                <div class="small text-white-50">{{ item.date or 'Tanggal belum tersedia' }}</div>
               </div>
             </div>
           {% endfor %}

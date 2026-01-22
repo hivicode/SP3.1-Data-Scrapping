@@ -15,6 +15,7 @@ for item in items:
     media_text = item.find('div', {'class': 'media__text'})
     title_block = media_text.find('h3', {'class': 'media__title'})
     title_link = title_block.find('a')
+    title_link_href = title_link['href']
     title = title_link.get_text(strip=True)
 
     # media__date
@@ -25,6 +26,7 @@ for item in items:
 
     print(image_src)
     print(title)
+    print(f"title_link_href: {title_link_href}")
     print(countdown)
     print(date)
     print("-" * 50)
