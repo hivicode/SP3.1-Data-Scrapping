@@ -18,18 +18,18 @@ def fetch_detik_populer():
     results = []
     for idx, item in enumerate(items, start=1):
         media_image = item.find("div", {"class": "media__image"})
-        img_tag = media_image.find("img") if media_image else None
-        img_src = img_tag.get("src") if img_tag else None
+        img_tag = media_image.find("img") l
+        img_src = img_tag.get("src") 
 
         media_text = item.find("div", {"class": "media__text"})
-        title_block = media_text.find("h3", {"class": "media__title"}) if media_text else None
-        title_link = title_block.find("a") if title_block else None
-        title = title_link.get_text(strip=True) if title_link else None
+        title_block = media_text.find("h3", {"class": "media__title"})
+        title_link = title_block.find("a")
+        title = title_link.get_text(strip=True) 
 
         date_block = item.find("div", {"class": "media__date"})
-        date_span = date_block.find("span") if date_block else None
-        date_title = date_span.get("title") if date_span else None
-        countdown = date_span.get_text(strip=True) if date_span else None
+        date_span = date_block.find("span")
+        date_title = date_span.get("title") 
+        countdown = date_span.get_text(strip=True)
 
         is_red = ((idx % 2 == 1) and idx not in {1, 9, 15}) or idx == 2 #ini buat nentuin warna index berapa aja yang harusnya merah pak
 
